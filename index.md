@@ -5,23 +5,23 @@ title: Tarnyq
 About us
 --------
 
-We approach developent via a test- and correct-by-construction approach.
-at software should be deploy-ready at every stage of developement.
+We build high assurance software using [*formal method techniques*][fm]. These provide guarantees
+of correctness and are more urgent than ever, serving as guardrails as software
+development relies more heavily on generative AI.
+Our approach involves *test-driven development* and takes *continuous-delivery* seriously:
+software should be deploy-ready at every stage of development.
 
-We have experience in building high assurance software using formal method techniques.
-These techniques are more urgent as guardrails, as software development relies
-more heavily on generative AI.
-
-
-We have PhDs in Formal Methods from the University of Illinois Urbana-Champaign
+We have PhDs in formal methods from the University of Illinois Urbana-Champaign
 and are published at top conferences such as CAV, CSF, TACAS, and FMCAD, in
-areas such as fundemental research in Mathematics, High-assurance healthcare, and blockchains.
+areas such as high-assurance healthcare, fundamental research in mathematics, and blockchains.
 
 We have worked at leading companies including AWS and Runtime Verification Inc.
 Our experience includes
-assuring consistency acorss millions of lines of distributed code
+assuring consistency across millions of lines of distributed code
 formally verified clinical decision systems,
-Auditing and developement of fintech software and protocols.
+Auditing and development of fintech software and protocols.
+
+[fm]: https://en.wikipedia.org/wiki/Formal_methods
 
 
 Contact
