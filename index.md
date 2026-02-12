@@ -13,13 +13,13 @@ software should be deploy-ready at every stage of development.
 
 We have PhDs in formal methods from the University of Illinois Urbana-Champaign
 and are published at top conferences such as CAV, CSF, TACAS, and FMCAD, in
-areas such as high-assurance healthcare, fundamental research in mathematics, and blockchains.
+areas such as high-assurance healthcare, fundamental research in mathematics, and blockchain.
 
 We have worked at leading companies including AWS and Runtime Verification Inc.
 Our experience includes
-assuring consistency across millions of lines of distributed code
-formally verified clinical decision systems,
-Auditing and development of fintech software and protocols.
+assuring consistency across millions of lines of distributed code,
+formally verified clinical decision systems, and
+auditing and development of fintech software and protocols.
 
 [fm]: https://en.wikipedia.org/wiki/Formal_methods
 
