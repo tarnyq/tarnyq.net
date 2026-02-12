@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+exec pandoc -t html5 --css=style.css --standalone index.md -o index.html
