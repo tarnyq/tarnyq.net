@@ -2,4 +2,5 @@
 
 set -euo pipefail
 
-exec pandoc -t html5 --css=style.css --standalone index.md -o www/index.html
+pandoc -t html5 --css=style.css --standalone index.md -o www/index.html
+pandoc -t html5 --css=style.css --standalone healthcare.md -o www/healthcare.html
