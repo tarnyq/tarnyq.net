@@ -5,15 +5,17 @@ title: Tarnyq
 About us
 --------
 
-We build high assurance software using [*formal method techniques*][fm]. These provide guarantees
-of correctness and are more urgent than ever, serving as guardrails as software
-development relies more heavily on generative AI.
+We build high assurance software using [*formal method techniques*][fm].
+These provide guarantees of correctness that are more urgent than ever,
+serving as guardrails as software development relies more heavily on generative AI.
 Our approach involves *test-driven development* and takes *continuous-delivery* seriously:
 software should be deploy-ready at every stage of development.
 
 We have PhDs in formal methods from the University of Illinois Urbana-Champaign
-and are published at top conferences such as CAV, CSF, TACAS, and FMCAD, in
-areas such as high-assurance healthcare, fundamental research in mathematics, and blockchain.
+and are published at top conferences such as CAV, CSF, TACAS, and FMCAD,
+in areas such as high-assurance healthcare,
+fundamental research in mathematics,
+and blockchain.
 
 We have worked at leading companies including AWS and Runtime Verification Inc.
 Our experience includes
@@ -27,5 +29,6 @@ auditing and development of fintech software and protocols.
 Contact
 -------
 
-Reach out to us by email at [manasvi@tarnyq.net](mailto:manasvi@tarnyq.net)
-or [nishant@tarnyq.net](mailto:nishant@tarnyq.net).
+Reach out to us by email at
+[manasvi@tarnyq.net](mailto:manasvi@tarnyq.net) or
+[nishant@tarnyq.net](mailto:nishant@tarnyq.net).
