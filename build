@@ -2,5 +2,19 @@
 
 set -euo pipefail
 
-pandoc -t html5 --css=style.css --standalone index.md -o www/index.html
-pandoc -t html5 --css=style.css --standalone healthcare.md -o www/healthcare.html
+clean() { rm -r www/; }
+
+copy_assets() {
+    cp -r pubs      www/
+    cp    style.css www/
+}
+
+build_webpages() {
+    pandoc -t html5 --css=style.css --standalone index.md -o www/index.html
+    pandoc -t html5 --css=style.css --standalone healthcare.md -o www/healthcare.html
+}
+
+clean
+mkdir -p www/
+copy_assets
+build_webpages
