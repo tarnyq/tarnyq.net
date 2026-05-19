@@ -8,6 +8,7 @@ in Intensive Care, for time-critical conditions like sepsis and cardiac
 arrest.
 
 Our safety-first philosophy has two aspects:
+
 1. Designing and implementing systems that can be rigorous analyzed for
    desired safety properties through *formal methods*.
 2. Ensuring accuracy of medical knowledge in the system through use of
