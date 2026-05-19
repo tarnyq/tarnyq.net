@@ -26,5 +26,8 @@ advice consistent with the latest best practice guidelines. Our work
 particularly focuses on *pediatric cases*, where treatment workflows are
 extremely sensitive to parameters such as the age, weight.
 
-Publications
-------------
+Related Publications
+--------------------
+
+*   [MediK: Towards Safe Guideline-based Clinical Decision Support](pubs/MediK-FMCAD-23.pdf)
+    Published in [FMCAD 2023](https://ieeexplore.ieee.org/abstract/document/10329373)
