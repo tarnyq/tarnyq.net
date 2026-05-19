@@ -29,6 +29,7 @@ auditing and development of fintech software and protocols.
 Contact
 -------
 
-Reach out to us by email at
-[manasvi@tarnyq.net](mailto:manasvi@tarnyq.net) or
-[nishant@tarnyq.net](mailto:nishant@tarnyq.net).
+Reach out to us by email at:
+
+* manasvi at tarnyq.net or
+* nishant at tarnyq.net
