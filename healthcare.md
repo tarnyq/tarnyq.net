@@ -1,5 +1,5 @@
 ---
-title: XXXX
+title: Trustworthy Decision Support Systems
 ---
 
 Clinical guidelines are comprehensive documents with proven efficacy.
@@ -50,7 +50,19 @@ validate (and therefore trust) the system.
 Compare this with an AI-based approach
 which is opaque and may be prone to hallucinations.
 
+You may read more about our system and methodology
+in the [linked publications](#publications).
+
+
 ---
+
+<!--
+
+Our next goals are to extend our system to care for cardiovascular and stroke care
+
+https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms
+
+
 
 > Should we reframe the table below?
 
@@ -70,14 +82,17 @@ Built as part of a research collaboration between University of Illinois
 Urbana-Champaign and OSF Children's Hospital of Illinois, Peoria, our
 demonstrably safe system provides comprehensive decision support.
 
+-->
 
-Related Publications
+Related Publications { #publications }
 --------------------
 
-*   [MediK: Towards Safe Guideline-based Clinical Decision Support](pubs/MediK-FMCAD-23.pdf)
+*   [MediK: Towards Safe Guideline-based Clinical Decision Support](pubs/MediK-FMCAD-23.pdf)  
     Published in [FMCAD 2023](https://ieeexplore.ieee.org/abstract/document/10329373)
-*   [Manasvi Saxena, PhD Dissertation](pubs/Saxena-dissertation.pdf)
-    [University of Illinois Urbana-Champaign, 2024](https://www.ideals.illinois.edu/items/134278)
+*   [Towards Modular and Formally-Verifiable Software Architecture for Clinical Guidance Systems](xxxxx)  
+    Published in [SMC 2023]()
+*   [A Semantics-First Approach to Safe Guidelines-Based Clinical Decision Support](pubs/Saxena-dissertation.pdf)  
+    Published in [Ideals @  Illinois](https://www.ideals.illinois.edu/items/134278), 2024
 
 
 [formal]: https://en.wikipedia.org/wiki/Formal_methods
