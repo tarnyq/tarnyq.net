@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>XXXX</title>
+  <title>Trustworthy Decision Support Systems</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -26,7 +26,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">XXXX</h1>
+<h1 class="title">Trustworthy Decision Support Systems</h1>
 </header>
 <p>Clinical guidelines are comprehensive documents with proven efficacy.
 The flip-side is that they are complicated. They must take into account
@@ -63,73 +63,51 @@ both comprehensible and machine-interpretable. This makes it easier for
 clinicians to inspect and validate (and therefore trust) the system.
 Compare this with an AI-based approach which is opaque and may be prone
 to hallucinations.</p>
+<p>You may read more about our system and methodology in the <a
+href="#publications">linked publications</a>.</p>
 <hr />
-<blockquote>
-<p>Should we reframe the table below?</p>
-</blockquote>
-<table>
-<colgroup>
-<col style="width: 35%" />
-<col style="width: 16%" />
-<col style="width: 18%" />
-<col style="width: 29%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th>EHR rule alerts</th>
-<th>ML/AI sepsis tools</th>
-<th>Tarnyq</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Guideline-conformant by construction</td>
-<td>partial</td>
-<td>no (statistical)</td>
-<td><strong>yes</strong></td>
-</tr>
-<tr>
-<td>Clinician can audit medical logic</td>
-<td>yes (but rigid)</td>
-<td>no</td>
-<td><strong>yes</strong></td>
-</tr>
-<tr>
-<td>Pediatric-support</td>
-<td>no</td>
-<td>rarely</td>
-<td><strong>yes</strong></td>
-</tr>
-<tr>
-<td>Support Beyond Onset Detection</td>
-<td>limited</td>
-<td>no</td>
-<td><strong>comprehensive</strong></td>
-</tr>
-<tr>
-<td>Formally-verified Correctness</td>
-<td>no</td>
-<td>no</td>
-<td><strong>yes - proven reactivity</strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="our-system-in-action">Our System In Action</h2>
-<p>Built as part of a research collaboration between University of
-Illinois Urbana-Champaign and OSF Children’s Hospital of Illinois,
-Peoria, our demonstrably safe system provides comprehensive decision
-support.</p>
-<h2 id="related-publications">Related Publications</h2>
+<!--
+
+Our next goals are to extend our system to care for cardiovascular and stroke care
+
+https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms
+
+
+
+> Should we reframe the table below?
+
+|                                      | EHR rule alerts | ML/AI sepsis tools | Tarnyq                        |
+|--------------------------------------|-----------------|--------------------|-------------------------------|
+| Guideline-conformant by construction | partial         | no (statistical)   | **yes**                       |
+| Clinician can audit medical logic    | yes (but rigid) | no                 | **yes**                       |
+| Pediatric-support                    | no              | rarely             | **yes**                       |
+| Support Beyond Onset Detection       | limited         | no                 | **comprehensive**             |
+| Formally-verified Correctness        | no              | no                 | **yes - proven reactivity**   |
+
+
+Our System In Action
+--------------------
+
+Built as part of a research collaboration between University of Illinois
+Urbana-Champaign and OSF Children's Hospital of Illinois, Peoria, our
+demonstrably safe system provides comprehensive decision support.
+
+-->
+<h2 id="publications">Related Publications</h2>
 <ul>
 <li><a href="pubs/MediK-FMCAD-23.pdf">MediK: Towards Safe
-Guideline-based Clinical Decision Support</a> Published in <a
+Guideline-based Clinical Decision Support</a><br />
+Published in <a
 href="https://ieeexplore.ieee.org/abstract/document/10329373">FMCAD
 2023</a></li>
-<li><a href="pubs/Saxena-dissertation.pdf">Manasvi Saxena, PhD
-Dissertation</a> <a
-href="https://www.ideals.illinois.edu/items/134278">University of
-Illinois Urbana-Champaign, 2024</a></li>
+<li><a href="xxxxx">Towards Modular and Formally-Verifiable Software
+Architecture for Clinical Guidance Systems</a><br />
+Published in <a href="">SMC 2023</a></li>
+<li><a href="pubs/Saxena-dissertation.pdf">A Semantics-First Approach to
+Safe Guidelines-Based Clinical Decision Support</a><br />
+Published in <a
+href="https://www.ideals.illinois.edu/items/134278">Ideals @
+Illinois</a>, 2024</li>
 </ul>
 </body>
 </html>
