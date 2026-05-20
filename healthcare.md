@@ -1,9 +1,11 @@
 ---
-title: Healthcare
+title: Automating Clinical Decision Support
 ---
 
 Addressing Sepsis
 -----------------
+
+> One senstence explaining that we work for arb guidelines and not just Sepsis
 
 Sepsis remains one of the leading causes of mortality in
 Intensive Care Units (ICUs) across the world.
@@ -15,7 +17,8 @@ Our clinical support system for timely sepsis detection
 is a [formal] machine interpretation
 of the evidence-based [Surviving Sepsis][surviving-sepsis] guideline,
 and takes into account a patients medical history and condition.
-This enables clinicians to follow the *guidelines* exactly with a reduced congnitive load.
+This enables clinicians to follow the *guidelines* exactly
+with a reduced cognitive load.
 
 Our Approach
 ------------
@@ -25,20 +28,20 @@ or ML/AI-based statistical analyzers for warning of sepsis onset.
 These systems have made progress towards improving outcomes by timely
 sepsis detection and early prediction.
 
-Our system augments this by going beyond detection and issuing treatment advice.
-This advice is: a) patient-specific--it takes into account
-the patient's medical history and data from monitors, and,
-and b) evidence-based--it is based of tried and tested guidelines
-issued by [Surviving Sepsis][surviving-sepsis]. This enables care delivered to be
-consistent with best practices while reducing the clinician's cognitive load.
+Our system augments this with treatment advice. This advice is:
+a) patient-specific---it takes into account
+the patient's medical history and data from monitors, and
+b) evidence-based---it is derived from the industry-standard and peer-reviewed
+[Surviving Sepsis][surviving-sepsis] guideline.
+This enables care delivered to be consistent with best practices
+while reducing the clinician's cognitive load.
 
-We specify guidelines in a language that is both
-clinician-friendly and machine-interpretable. This enables clinicians to directly
-inspect and validate the medical knowledge powering the system, allowing a
-level of trust unavailable from black-box AI approaches, which may hallucinate.
-Beyond ensuring the correctness of encoded medical knowledge, we use *formal
-methods* to mathematically prove that the system remains reactive for every
-admissible input.
+At the same time, these guidelines are written in a language
+that is both comprehensible and machine-interpretable.
+This makes it easier for clinicians to inspect and
+validate (and therefore trust) the system.
+Compare this with an AI-based approach
+which is opaque and may be prone to hallucinations.
 
 ---
 

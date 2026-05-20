@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Healthcare</title>
+  <title>Automating Clinical Decision Support</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -26,40 +26,47 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Healthcare</h1>
+<h1 class="title">Automating Clinical Decision Support</h1>
 </header>
 <h2 id="addressing-sepsis">Addressing Sepsis</h2>
+<blockquote>
+<p>One senstence explaining that we work for arb guidelines and not just
+Sepsis</p>
+</blockquote>
 <p>Sepsis remains one of the leading causes of mortality in Intensive
-Care Units (ICUs) across the world. Characterized by a dysregulated
-immune response, sepsis kills in hours, and remains an unaddressed
-problem in modern ICUs. We’re building clinical support software for
-timely sepsis detection, enabling clinicians to follow
-<em>evidence-based guidelines</em> exactly.</p>
-<h2 id="a-system-for-managing-pediatric-sepsis-not-just-detecting-it">A
-System For Managing Pediatric Sepsis, Not Just Detecting It</h2>
-<p>Building decision support for sepsis, particularly in pediatric
-settings, is <em>challenging</em>. Drug dosing and fluid resuscitation
-is age- and weight-sensitive, and mortality climbs sharply (roughly 8%)
-with each passing hour.</p>
-<p>Thus, current sepsis support systems are either rigid EHR rule
-alerts, or ML/AI-based statistical analyzers that <em>warn</em> of
-sepsis onset, and leave the critical job of administering
-<em>guideline-conformant</em> care solely to the attending clinician.
-This often leads to alert-fatigue, and clinicians are left with systems
-they don’t trust.</p>
-<h2 id="our-approach-holistic-trustworthy-decision-support">Our
-Approach: Holistic, Trustworthy Decision Support</h2>
-<p>We place <em>software correctness</em> and <em>clinician trust</em>
-at the core of our approach. In particular:</p>
-<ol type="1">
-<li>We encode medical knowledge using a <em>clinician-friendly</em>
-Domain-Specific Language (DSL) that allows clinicians to
-<em>validate</em> its accuracy. The upshot: clinicians can validate and
-fine-tune every nuance of the system’s behavior.</li>
-<li>We use <em>formal methods</em> to <em>mathematically prove</em>
-correctness and reliability, ensuring core functionality is maintained
-at all times.</li>
-</ol>
+Care Units (ICUs) across the world. Sepsis kills in hours, and so a
+timely response can lead to lives saved. Drug dosing and fluid
+resuscitation is complex, particularly in pediatric settings. It is age-
+and weight-sensitive, and mortality climbs sharply with each passing
+hour.</p>
+<p>Our clinical support system for timely sepsis detection is a <a
+href="https://en.wikipedia.org/wiki/Formal_methods">formal</a> machine
+interpretation of the evidence-based <a
+href="https://www.sccm.org/survivingsepsiscampaign">Surviving Sepsis</a>
+guideline, and takes into account a patients medical history and
+condition. This enables clinicians to follow the <em>guidelines</em>
+exactly with a reduced cognitive load.</p>
+<h2 id="our-approach">Our Approach</h2>
+<p>Current sepsis support systems are either rigid EHR rule alerts, or
+ML/AI-based statistical analyzers for warning of sepsis onset. These
+systems have made progress towards improving outcomes by timely sepsis
+detection and early prediction.</p>
+<p>Our system augments this with treatment advice. This advice is: a)
+patient-specific—it takes into account the patient’s medical history and
+data from monitors, and b) evidence-based—it is derived from the
+industry-standard and peer-reviewed <a
+href="https://www.sccm.org/survivingsepsiscampaign">Surviving Sepsis</a>
+guideline. This enables care delivered to be consistent with best
+practices while reducing the clinician’s cognitive load.</p>
+<p>At the same time, these guidelines are written in a language that is
+both comprehensible and machine-interpretable. This makes it easier for
+clinicians to inspect and validate (and therefore trust) the system.
+Compare this with an AI-based approach which is opaque and may be prone
+to hallucinations.</p>
+<hr />
+<blockquote>
+<p>Should we reframe the table below?</p>
+</blockquote>
 <table>
 <colgroup>
 <col style="width: 35%" />
@@ -119,6 +126,10 @@ support.</p>
 Guideline-based Clinical Decision Support</a> Published in <a
 href="https://ieeexplore.ieee.org/abstract/document/10329373">FMCAD
 2023</a></li>
+<li><a href="pubs/Saxena-dissertation.pdf">Manasvi Saxena, PhD
+Dissertation</a> <a
+href="https://www.ideals.illinois.edu/items/134278">University of
+Illinois Urbana-Champaign, 2024</a></li>
 </ul>
 </body>
 </html>
