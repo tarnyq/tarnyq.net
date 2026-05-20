@@ -13,13 +13,9 @@ It is age- and weight-sensitive, and mortality climbs sharply with each passing 
 
 Our clinical support system for timely sepsis detection
 is a [formal] machine interpretation
-of the evidence-based [Surviving Sepsis] guideline,
+of the evidence-based [Surviving Sepsis][surviving-sepsis] guideline,
 and takes into account a patients medical history and condition.
 This enables clinicians to follow the *guidelines* exactly with a reduced congnitive load.
-
-[formal] : XXXX
-[Surviving Sepsis] : XXXX
-
 
 Our Approach
 ------------
@@ -33,7 +29,7 @@ Our system augments this by going beyond detection and issuing treatment advice.
 This advice is: a) patient-specific--it takes into account
 the patient's medical history and data from monitors, and,
 and b) evidence-based--it is based of tried and tested guidelines
-issued by [Surviving Sepsis]. This enables care delivered to be
+issued by [Surviving Sepsis][surviving-sepsis]. This enables care delivered to be
 consistent with best practices while reducing the clinician's cognitive load.
 
 We specify guidelines in a language that is both
@@ -70,3 +66,9 @@ Related Publications
 
 *   [MediK: Towards Safe Guideline-based Clinical Decision Support](pubs/MediK-FMCAD-23.pdf)
     Published in [FMCAD 2023](https://ieeexplore.ieee.org/abstract/document/10329373)
+*   [Manasvi Saxena, PhD Dissertation](pubs/Saxena-dissertation.pdf)
+    [University of Illinois Urbana-Champaign, 2024](https://www.ideals.illinois.edu/items/134278)
+
+
+[formal]: https://en.wikipedia.org/wiki/Formal_methods
+[surviving-sepsis]: https://www.sccm.org/survivingsepsiscampaign
