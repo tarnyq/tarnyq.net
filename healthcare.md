@@ -26,21 +26,23 @@ Our Approach
 
 Current sepsis support systems are either rigid EHR rule alerts,
 or ML/AI-based statistical analyzers for warning of sepsis onset.
-These make significant headway in lowering XXXX
+These systems have made progress towards improving outcomes by timely
+sepsis detection and early prediction.
 
-Beyond detection, our system augments this by issuing advice
-from treatment plans.
+Our system augments this by going beyond detection and issuing treatment advice.
 This advice is: a) patient-specific--it takes into account
-the patients medical history as well as monitor data,
+the patient's medical history and data from monitors, and,
 and b) evidence-based--it is based of tried and tested guidelines
-issued by [Surviving Sepsis].
-Rendered treatment is thus consistent with best practices
-while at the same time congnitively easier to apply.
+issued by [Surviving Sepsis]. This enables care delivered to be
+consistent with best practices while reducing the clinician's cognitive load.
 
-At the same time, these guidelines are written in a language
-that is simultanously clinician-friendly and machine-interpretatable.
-This makes it easier to verify and trust the guidelines.
-Compare this with an AI-based approach which may be prone to halucinations.
+We specify guidelines in a language that is both
+clinician-friendly and machine-interpretable. This enables clinicians to directly
+inspect and validate the medical knowledge powering the system, allowing a
+level of trust unavailable from black-box AI approaches, which may hallucinate.
+Beyond ensuring the correctness of encoded medical knowledge, we use *formal
+methods* to mathematically prove that the system remains reactive for every
+admissible input.
 
 ---
 
