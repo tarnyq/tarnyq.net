@@ -1,24 +1,31 @@
 ---
-title: Automating Clinical Decision Support
+title: XXXX
 ---
 
-Addressing Sepsis
------------------
+Clinical guidelines are comprehensive documents with proven efficacy.
+The flip-side is that they are complicated.
+They must take into account pediatric and geriatric care,
+co-morbidities, drug-drug interactions.
+They also evolve frequently as new evidence emerges.
+This makes following them as written difficult,
+especially in high-stress settings.
 
-> One senstence explaining that we work for arb guidelines and not just Sepsis
-
+Can this be made easier?
+As a case study, we decided to take a look at
+the [Surviving Sepsis][surviving-sepsis] guideline.
 Sepsis remains one of the leading causes of mortality in
-Intensive Care Units (ICUs) across the world.
+ICUs across the world.
 Sepsis kills in hours, and so a timely response can lead to lives saved.
 Drug dosing and fluid resuscitation is complex, particularly in pediatric settings.
-It is age- and weight-sensitive, and mortality climbs sharply with each passing hour.
+It is age- and weight-sensitive,
+and mortality climbs sharply with each passing hour.
 
-Our clinical support system for timely sepsis detection
-is a [formal] machine interpretation
-of the evidence-based [Surviving Sepsis][surviving-sepsis] guideline,
-and takes into account a patients medical history and condition.
-This enables clinicians to follow the *guidelines* exactly
+Our decision support system interprets these guidelines,
+taking into account a patient's medical history and condition,
+and presents compliant advice.
+This enables clinicians to follow the guidelines exactly
 with a reduced cognitive load.
+
 
 Our Approach
 ------------
