@@ -5,8 +5,9 @@ set -euo pipefail
 clean() { rm -r -f www/; }
 
 copy_assets() {
-    cp -r healthcare/pubs  www/healthcare
-    cp    style.css        www/
+    cp -r healthcare/pubs   www/healthcare
+    cp -r healthcare/media  www/healthcare
+    cp    style.css         www/
 }
 
 build_webpages() {
