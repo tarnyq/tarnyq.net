@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Trustworthy Decision Support Systems</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Trustworthy Decision Support Systems</h1>
+</header>
+<p>Clinical guidelines are comprehensive documents with proven efficacy.
+The flip-side is that they are complicated. They must take into account
+pediatric and geriatric care, co-morbidities, drug-drug interactions.
+They also evolve frequently as new evidence emerges. This makes
+following them as written difficult, especially in high-stress
+settings.</p>
+<p>Can this be made easier? As a case study, we decided to take a look
+at the <a href="https://www.sccm.org/survivingsepsiscampaign">Surviving
+Sepsis</a> guideline. Sepsis remains one of the leading causes of
+mortality in ICUs across the world. Sepsis kills in hours, and so a
+timely response can lead to lives saved. Drug dosing and fluid
+resuscitation is complex, particularly in pediatric settings. It is age-
+and weight-sensitive, and mortality climbs sharply with each passing
+hour.</p>
+<p>Our decision support system interprets these guidelines, taking into
+account a patient’s medical history and condition, and presents
+compliant advice. This enables clinicians to follow the guidelines
+exactly with a reduced cognitive load.</p>
+<h2 id="our-approach">Our Approach</h2>
+<p>Current sepsis support systems are either rigid EHR rule alerts, or
+ML/AI-based statistical analyzers for warning of sepsis onset. These
+systems have made progress towards improving outcomes by timely sepsis
+detection and early prediction.</p>
+<p>Our system augments this with treatment advice. This advice is: a)
+patient-specific—it takes into account the patient’s medical history and
+data from monitors, and b) evidence-based—it is derived from the
+industry-standard and peer-reviewed <a
+href="https://www.sccm.org/survivingsepsiscampaign">Surviving Sepsis</a>
+guideline. This enables care delivered to be consistent with best
+practices while reducing the clinician’s cognitive load.</p>
+<p>At the same time, these guidelines are written in a language that is
+both comprehensible and machine-interpretable. This makes it easier for
+clinicians to inspect and validate (and therefore trust) the system.
+Compare this with an AI-based approach which is opaque and may be prone
+to hallucinations.</p>
+<p>You may read more about our system and methodology in the <a
+href="#publications">linked publications</a>.</p>
+<h2 id="current-progress">Current Progress</h2>
+<p>Our current system, built in collaboration with OSF Children’s
+Hospital in Peoria, Illinois, provides guidance through a tablet at the
+patient’s bedside. It fuses inputs from the attending clinician, the
+EHR, and patient monitors to continuously evaluate the patient for onset
+of sepsis.</p>
+<video src="media/continuous-monitoring.webm" autoplay muted loop playsinline>
+</video>
+<p>Once sepsis is detected, the system presents the clinician with
+patient-specific advice to administer guideline-compliant treatment,
+including time-critical workflows for fluid resuscitation and antibiotic
+administration.</p>
+<video src="media/fluid+antibiotic-workflows.webm" autoplay muted loop playsinline>
+</video>
+<p>Sepsis treatment also requires ongoing assessment as the patient
+responds. Our system delivers <em>timely</em> reminders and presents the
+clinician with patient data annotated with prior interventions such
+fluid boluses. This augments the clinician’s situation awareness with
+important patient-specific data, and ensures treatment remains
+consistent with guideline-prescribed timelines and dosages.</p>
+<video src="media/fluid-reminder-workflow.webm" autoplay muted loop playsinline>
+</video>
+<blockquote>
+<p>Consider adding more information+video on septic shock workflows.</p>
+</blockquote>
+<hr />
+<!--
+
+Our next goals are to extend our system to care for cardiovascular and stroke care
+
+https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms
+
+
+
+> Should we reframe the table below?
+
+|                                      | EHR rule alerts | ML/AI sepsis tools | Tarnyq                        |
+|--------------------------------------|-----------------|--------------------|-------------------------------|
+| Guideline-conformant by construction | partial         | no (statistical)   | **yes**                       |
+| Clinician can audit medical logic    | yes (but rigid) | no                 | **yes**                       |
+| Pediatric-support                    | no              | rarely             | **yes**                       |
+| Support Beyond Onset Detection       | limited         | no                 | **comprehensive**             |
+| Formally-verified Correctness        | no              | no                 | **yes - proven reactivity**   |
+
+
+Our System In Action
+--------------------
+
+Built as part of a research collaboration between University of Illinois
+Urbana-Champaign and OSF Children's Hospital of Illinois, Peoria, our
+demonstrably safe system provides comprehensive decision support.
+
+-->
+<h2 id="publications">Related Publications</h2>
+<ul>
+<li><a href="pubs/MediK-FMCAD-23.pdf">MediK: Towards Safe
+Guideline-based Clinical Decision Support</a><br />
+Published in <a
+href="https://ieeexplore.ieee.org/abstract/document/10329373">FMCAD
+2023</a></li>
+<li><a href="xxxxx">Towards Modular and Formally-Verifiable Software
+Architecture for Clinical Guidance Systems</a><br />
+Published in <a href="">SMC 2023</a></li>
+<li><a href="pubs/Saxena-dissertation.pdf">A Semantics-First Approach to
+Safe Guidelines-Based Clinical Decision Support</a><br />
+Published in <a
+href="https://www.ideals.illinois.edu/items/134278">Ideals @
+Illinois</a>, 2024</li>
+</ul>
+</body>
+</html>
