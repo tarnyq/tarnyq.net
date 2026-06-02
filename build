@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-clean() { rm -r www/; }
+clean() { rm -r -f www/; }
 
 copy_assets() {
     cp -r pubs      www/
@@ -10,8 +10,16 @@ copy_assets() {
 }
 
 build_webpages() {
-    pandoc -t html5 --css=style.css --standalone index.md -o www/index.html
-    pandoc -t html5 --css=style.css --standalone healthcare.md -o www/healthcare.html
+    markdowns=(
+        index.md
+        healthcare.md
+        secure-by-design/index.md
+    )
+    for markdown in "${markdowns[@]}"; do
+        html="www/${markdown%.md}.html"
+        mkdir -p "$(dirname "$html")"
+        pandoc -t html5 --css=style.css --standalone "$markdown" -o "$html"
+    done
 }
 
 clean
