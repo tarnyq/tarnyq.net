@@ -61,46 +61,94 @@ Peoria, Illinois, provides guidance through a tablet at the patient's
 bedside. It fuses inputs from the attending clinician, the EHR, and patient
 monitors to continuously evaluate the patient for onset of sepsis.
 
-<video
-    src="media/continuous-monitoring.webm"
-    autoplay=false
-    muted
-    loop=false
-    playsinline
-    controls=true
-    >
-</video>
+As shown in [Figure 1](#fig-monitoring), the system prompts the clinician
+to enter any pre-existing conditions that affect sepsis risk, such as
+cancer, immunosuppression, or congenital heart disease. It then evaluates
+real-time data from the bedside monitor and EHR to detect sepsis onset as
+defined by the guideline, alerting the clinician the moment criteria are
+met.
 
-Once sepsis is detected, the system presents the clinician with
-patient-specific advice to administer guideline-compliant treatment,
-including time-critical workflows for fluid resuscitation and antibiotic
-administration.
+The system presents the relevant patient information on screen, grouped
+into buckets of linked parameters that succinctly tell the clinician
+whether sepsis onset has occurred. When every bucket contains an abnormal
+value, sepsis is flagged. This minimizes the time between actual sepsis
+onset and its detection by the clinical staff — ensuring treatment can
+begin without delay.
 
-<video
-    src="media/fluid+antibiotic-workflows.webm"
-    autoplay=false
-    muted
-    loop=false
-    playsinline
-    controls=true
-    >
-</video>
 
-Sepsis treatment also requires ongoing assessment as the patient responds.
-Our system delivers *timely* reminders and presents the clinician with
-patient data annotated with prior interventions such fluid boluses. This
-augments the clinician's situation awareness with important
-patient-specific data, and ensures treatment remains consistent with
-guideline-prescribed timelines and dosages.
 
-<video src="media/fluid-reminder-workflow.webm"
-    autoplay=false
-    muted
-    loop=false
-    playsinline
-    controls=true
-    >
-</video>
+<figure id="fig-monitoring">
+  <video
+      src="media/continuous-monitoring.webm"
+      autoplay=false
+      muted
+      loop=false
+      playsinline
+      controls=true
+      >
+  </video>
+  <figcaption> Figure 1: Continuous Sepsis Monitoring </figcaption>
+</figure>
+
+Once sepsis is flagged, the system directs the clinician's attention to a
+list of time-bound steps that keep treatment guideline-compliant. As shown
+in [Figure 2](#fig-workflows), the attending clinician is expected to check
+off each item while directing nursing staff to perform the associated
+action. This ensures critical tasks, such as administering high-flow oxygen
+and establishing IV/IO access, are completed on time. Two of these, fluid
+resuscitation and antibiotic administration, are complex and time-critical
+interventions. To handle the complexity, each launches a patient-tailored
+sub-workflow when the clinician checks it off.
+
+When starting fluid resuscitation, the system accounts for the risk of
+fluid overload and recommends a guideline-prescribed fluid at a dose
+tailored to the patient's weight and condition. Similarly, when starting
+antibiotics, it factors in the patient's history along with hospital- and
+area-specific pathogens, recommending an antibiotic combination that is
+broad enough to cover likely pathogens but no broader than necessary.
+
+<figure id="fig-workflows">
+  <video
+      src="media/fluid+antibiotic-workflows.webm"
+      autoplay=false
+      muted
+      loop=false
+      playsinline
+      controls=true
+      >
+  </video>
+  <figcaption> Figure 2: Time-bound Treatment Workflows </figcaption>
+</figure>
+
+
+Sepsis treatment is rarely a single-shot intervention. It requires the
+clinical staff to periodically assess the patient's response and administer
+fluids and inotropes accordingly. As shown in [Figure 3](#fig-reminders),
+our system delivers *timely* reminders, surfacing relevant patient
+information such as vital signs graphs annotated with prior fluid boluses
+and inotropic doses. This gives the clinician a holistic view of the
+patient's state and treatment progress, equipping them to direct care
+effectively and keep treatment guideline-compliant.
+
+<figure id="fig-reminders">
+  <video src="media/fluid-reminder-workflow.webm"
+      autoplay=false
+      muted
+      loop=false
+      playsinline
+      controls=true
+      >
+  </video>
+  <figcaption> Figure 3: Reminders with Relevant Information </figcaption>
+</figure>
+
+Clinicians are already over-burdened with ever-increasing patient loads.
+Our system acts as a smart assistant, presenting the right information and
+reminders at appropriate times. The clinician no longer needs to memorize
+specific drug dosages and combinations, or track how the guideline evolves
+as new evidence emerges. The result is more effective decisions, fewer
+errors, and treatment that stays *always timely* and compliant with the
+*latest guidelines*.
 
 
 > Consider adding more information+video on septic shock workflows.
