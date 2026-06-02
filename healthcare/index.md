@@ -87,7 +87,7 @@ begin without delay.
       controls=true
       >
   </video>
-  <figcaption> Figure 1: Continuous Sepsis Monitoring </figcaption>
+  <figcaption>Figure 1: Continuous Sepsis Monitoring</figcaption>
 </figure>
 
 Once sepsis is flagged, the system directs the clinician's attention to a
@@ -117,18 +117,30 @@ broad enough to cover likely pathogens but no broader than necessary.
       controls=true
       >
   </video>
-  <figcaption> Figure 2: Time-bound Treatment Workflows </figcaption>
+  <figcaption>Figure 2: Time-bound Treatment Workflows</figcaption>
 </figure>
-
 
 Sepsis treatment is rarely a single-shot intervention. It requires the
 clinical staff to periodically assess the patient's response and administer
 fluids and inotropes accordingly. As shown in [Figure 3](#fig-reminders),
-our system delivers *timely* reminders, surfacing relevant patient
-information such as vital signs graphs annotated with prior fluid boluses
-and inotropic doses. This gives the clinician a holistic view of the
-patient's state and treatment progress, equipping them to direct care
-effectively and keep treatment guideline-compliant.
+our system delivers *timely* reminders to support these reassessments. The
+reminders contain relevant patient information, such as vital signs graphs,
+annotated with prior fluid boluses and inotropic doses. This gives the
+clinician a holistic view of the patient's state and treatment progress,
+equipping them to direct care effectively.
+
+Based on the clinician's assessment of patient progress and treatment
+history, the system suggests next steps. This keeps multi-step
+interventions, such as repeated fluid boluses and inotrope infusions, on
+schedule and at optimal dosages.
+
+Clinicians are already over-burdened with ever-increasing patient loads.
+Our system acts as a smart assistant, presenting the right information and
+reminders at appropriate times. The clinician no longer needs to memorize
+specific drug dosages and combinations, or track how the guideline evolves
+as new evidence emerges. The result is more effective decisions, fewer
+errors, and treatment that stays *always timely* and compliant with the
+*latest guidelines*.
 
 <figure id="fig-reminders">
   <video src="media/fluid-reminder-workflow.webm"
@@ -139,17 +151,8 @@ effectively and keep treatment guideline-compliant.
       controls=true
       >
   </video>
-  <figcaption> Figure 3: Reminders with Relevant Information </figcaption>
+  <figcaption>Figure 3: Reminders with Relevant Information</figcaption>
 </figure>
-
-Clinicians are already over-burdened with ever-increasing patient loads.
-Our system acts as a smart assistant, presenting the right information and
-reminders at appropriate times. The clinician no longer needs to memorize
-specific drug dosages and combinations, or track how the guideline evolves
-as new evidence emerges. The result is more effective decisions, fewer
-errors, and treatment that stays *always timely* and compliant with the
-*latest guidelines*.
-
 
 > Consider adding more information+video on septic shock workflows.
 
