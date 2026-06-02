@@ -61,16 +61,30 @@ Peoria, Illinois, provides guidance through a tablet at the patient's
 bedside. It fuses inputs from the attending clinician, the EHR, and patient
 monitors to continuously evaluate the patient for onset of sepsis.
 
-<video src="media/continuous-monitoring.webm" autoplay muted loop
-playsinline></video>
+<video
+    src="media/continuous-monitoring.webm"
+    autoplay=false
+    muted
+    loop=false
+    playsinline
+    controls=true
+    >
+</video>
 
 Once sepsis is detected, the system presents the clinician with
 patient-specific advice to administer guideline-compliant treatment,
 including time-critical workflows for fluid resuscitation and antibiotic
 administration.
 
-<video src="media/fluid+antibiotic-workflows.webm" autoplay muted loop
-playsinline></video>
+<video
+    src="media/fluid+antibiotic-workflows.webm"
+    autoplay=false
+    muted
+    loop=false
+    playsinline
+    controls=true
+    >
+</video>
 
 Sepsis treatment also requires ongoing assessment as the patient responds.
 Our system delivers *timely* reminders and presents the clinician with
@@ -79,8 +93,14 @@ augments the clinician's situation awareness with important
 patient-specific data, and ensures treatment remains consistent with
 guideline-prescribed timelines and dosages.
 
-<video src="media/fluid-reminder-workflow.webm" autoplay muted loop
-playsinline></video>
+<video src="media/fluid-reminder-workflow.webm"
+    autoplay=false
+    muted
+    loop=false
+    playsinline
+    controls=true
+    >
+</video>
 
 
 > Consider adding more information+video on septic shock workflows.
