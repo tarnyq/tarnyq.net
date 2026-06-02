@@ -22,34 +22,97 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Healthcare</h1>
 </header>
-<p>Our interests lie in building advanced clinical decision support
-software with strong correctness guarantees. Our current focus is on
-systems for use in Intensive Care, for time-critical conditions like
-sepsis and cardiac arrest.</p>
-<p>Our safety-first philosophy has two aspects:</p>
+<h2 id="addressing-sepsis">Addressing Sepsis</h2>
+<p>Sepsis remains one of the leading causes of mortality in Intensive
+Care Units (ICUs) across the world. Characterized by a dysregulated
+immune response, sepsis kills in hours, and remains an unaddressed
+problem in modern ICUs. We’re building clinical support software for
+timely sepsis detection, enabling clinicians to follow
+<em>evidence-based guidelines</em> exactly.</p>
+<h2 id="a-system-for-managing-pediatric-sepsis-not-just-detecting-it">A
+System For Managing Pediatric Sepsis, Not Just Detecting It</h2>
+<p>Building decision support for sepsis, particularly in pediatric
+settings, is <em>challenging</em>. Drug dosing and fluid resuscitation
+is age- and weight-sensitive, and mortality climbs sharply (roughly 8%)
+with each passing hour.</p>
+<p>Thus, current sepsis support systems are either rigid EHR rule
+alerts, or ML/AI-based statistical analyzers that <em>warn</em> of
+sepsis onset, and leave the critical job of administering
+<em>guideline-conformant</em> care solely to the attending clinician.
+This often leads to alert-fatigue, and clinicians are left with systems
+they don’t trust.</p>
+<h2 id="our-approach-holistic-trustworthy-decision-support">Our
+Approach: Holistic, Trustworthy Decision Support</h2>
+<p>We place <em>software correctness</em> and <em>clinician trust</em>
+at the core of our approach. In particular:</p>
 <ol type="1">
-<li>Designing and implementing systems that can be rigorous analyzed for
-desired safety properties through <em>formal methods</em>.</li>
-<li>Ensuring accuracy of medical knowledge in the system through use of
-<em>clinician-friendly</em> domain-specific languages, enabling
-clinicians to verify encoded knowledge matches their expectations.</li>
+<li>We encode medical knowledge using a <em>clinician-friendly</em>
+Domain-Specific Language (DSL) that allows clinicians to
+<em>validate</em> its accuracy. The upshot: clinicians can validate and
+fine-tune every nuance of the system’s behavior.</li>
+<li>We use <em>formal methods</em> to <em>mathematically prove</em>
+correctness and reliability, ensuring core functionality is maintained
+at all times.</li>
 </ol>
-<h2 id="sepsis-support-system">Sepsis Support System</h2>
-<p>Sepsis is a time-critical condition, and one of the leading causes of
-mortality in modern ICUs. Our work on sepsis focuses on providing
-clinicians in the ICU with a system that utilizes patient history, and
-continuously monitors patient vitals to detect sepsis onset in a timely
-manner. The system then supports the clinician with patient-specific
-advice consistent with the latest best practice guidelines. Our work
-particularly focuses on <em>pediatric cases</em>, where treatment
-workflows are extremely sensitive to parameters such as the age,
-weight.</p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 16%" />
+<col style="width: 18%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>EHR rule alerts</th>
+<th>ML/AI sepsis tools</th>
+<th>Tarnyq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guideline-conformant by construction</td>
+<td>partial</td>
+<td>no (statistical)</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>Clinician can audit medical logic</td>
+<td>yes (but rigid)</td>
+<td>no</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>Pediatric-support</td>
+<td>no</td>
+<td>rarely</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>Support Beyond Onset Detection</td>
+<td>limited</td>
+<td>no</td>
+<td><strong>comprehensive</strong></td>
+</tr>
+<tr>
+<td>Formally-verified Correctness</td>
+<td>no</td>
+<td>no</td>
+<td><strong>yes - proven reactivity</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="our-system-in-action">Our System In Action</h2>
+<p>Built as part of a research collaboration between University of
+Illinois Urbana-Champaign and OSF Children’s Hospital of Illinois,
+Peoria, our demonstrably safe system provides comprehensive decision
+support.</p>
 <h2 id="related-publications">Related Publications</h2>
 <ul>
 <li><a href="pubs/MediK-FMCAD-23.pdf">MediK: Towards Safe
