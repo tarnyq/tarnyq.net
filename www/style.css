@@ -8,7 +8,7 @@ html {
 }
 body {
   margin: 0 auto;
-  max-width: 36em;
+  max-width: 45em;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
@@ -62,7 +62,9 @@ svg {
 }
 video {
   height: auto;
-  max-width: 100%;
+  margin-left: -10em;
+  margin-right: -10em;
+  max-width: 65em;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.4em;
