@@ -63,7 +63,7 @@ monitors to continuously evaluate the patient for onset of sepsis.
 
 As shown in [Figure 1](#fig-monitoring), the system prompts the clinician
 to enter any pre-existing conditions that affect sepsis risk, such as
-cancer, immunosuppression, or congenital heart disease. It then evaluates 
+cancer, immunosuppression, or congenital heart disease. It then evaluates
 real-time data from the bedside monitor and EHR to detect sepsis onset as
 defined by the guideline. The system alerts the clinician the moment criteria are
 met.
@@ -133,14 +133,6 @@ history, the system suggests next steps. This keeps multi-step
 interventions, such as repeated fluid boluses and inotrope infusions, on
 schedule and at optimal dosages.
 
-Clinicians are already over-burdened with ever-increasing patient loads.
-Our system acts as a smart assistant, presenting the right information and
-reminders at appropriate times. The clinician no longer needs to memorize
-specific drug dosages and combinations, or track how the guideline evolves
-as new evidence emerges. The result is more effective decisions, fewer
-errors, and treatment that stays *always timely* and compliant with the
-*latest guidelines*.
-
 <figure id="fig-reminders">
   <video src="media/fluid-reminder-workflow.webm"
       autoplay=false
@@ -153,7 +145,41 @@ errors, and treatment that stays *always timely* and compliant with the
   <figcaption>Figure 3: Reminders with Relevant Information</figcaption>
 </figure>
 
-> Consider adding more information+video on septic shock workflows.
+Once initial fluid boluses are administered, our system continuously
+evaluates patient parameters for signs of cardiac distress indicative of
+septic shock, as shown in [Figure 4](#fig-shock).
+If detected, the system first evaluates
+the type of shock — cold, warm, normotensive, or indistinguishable. It then
+surfaces appropriate shock-related patient parameters to improve the
+clinician's awareness. Finally, it recommends an appropriate inotrope
+for infusion to address the shock.
+
+Our system reconciles competing recommendations.
+The sepsis guideline recommends starting fluids as soon as possible
+after sepsis detection. But fluid boluses can decrease cardiac function,
+particularly in pediatric cases. If our system detects shock, it adjusts
+the recommended fluid dosage to account for reduced cardiac function.
+This ensures treatment remains consistent across interventions.
+
+<figure id="fig-shock">
+  <video src="media/septic-shock.webm"
+      autoplay=false
+      muted
+      loop=false
+      playsinline
+      controls=true
+      >
+  </video>
+  <figcaption>Figure 4: Septic Shock Monitoring and Treatment</figcaption>
+</figure>
+
+Clinicians are already over-burdened with ever-increasing patient loads.
+Our system acts as a smart assistant, presenting the right information and
+reminders at appropriate times. The clinician no longer needs to memorize
+specific drug dosages and combinations, or track how the guideline evolves
+as new evidence emerges. The result is more effective decisions, fewer
+errors, and treatment that stays *always timely* and compliant with the
+*latest guidelines*.
 
 ---
 
