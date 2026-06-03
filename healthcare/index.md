@@ -16,7 +16,7 @@ the [Surviving Sepsis][surviving-sepsis] guideline.
 Sepsis remains one of the leading causes of mortality in
 ICUs across the world.
 Sepsis kills in hours, and so a timely response can lead to lives saved.
-Drug dosing and fluid resuscitation is complex, particularly in pediatric settings.
+Drug dosing and fluid resuscitation are complex, particularly in pediatric settings.
 It is age- and weight-sensitive,
 and mortality climbs sharply with each passing hour.
 
@@ -32,7 +32,7 @@ Our Approach
 
 Current sepsis support systems are either rigid EHR rule alerts,
 or ML/AI-based statistical analyzers for warning of sepsis onset.
-These systems have made progress towards improving outcomes by timely
+These systems have made improved outcomes through timely
 sepsis detection and early prediction.
 
 Our system augments this with treatment advice. This advice is:
@@ -40,7 +40,7 @@ a) patient-specific---it takes into account
 the patient's medical history and data from monitors, and
 b) evidence-based---it is derived from the industry-standard and peer-reviewed
 [Surviving Sepsis][surviving-sepsis] guideline.
-This enables care delivered to be consistent with best practices
+This keeps care consistent with best practices
 while reducing the clinician's cognitive load.
 
 At the same time, these guidelines are written in a language
@@ -63,19 +63,17 @@ monitors to continuously evaluate the patient for onset of sepsis.
 
 As shown in [Figure 1](#fig-monitoring), the system prompts the clinician
 to enter any pre-existing conditions that affect sepsis risk, such as
-cancer, immunosuppression, or congenital heart disease. It then evaluates
+cancer, immunosuppression, or congenital heart disease. It then evaluates 
 real-time data from the bedside monitor and EHR to detect sepsis onset as
-defined by the guideline, alerting the clinician the moment criteria are
+defined by the guideline. The system alerts the clinician the moment criteria are
 met.
 
 The system presents the relevant patient information on screen, grouped
-into buckets of linked parameters that succinctly tell the clinician
-whether sepsis onset has occurred. When every bucket contains an abnormal
-value, sepsis is flagged. This minimizes the time between actual sepsis
+into buckets of linked parameters. Together, these tell the clinician, at a
+glance, whether sepsis onset has occurred. When every bucket contains an abnormal
+value, sepsis is flagged. This minimizes the time between sepsis
 onset and its detection by the clinical staff — ensuring treatment can
 begin without delay.
-
-
 
 <figure id="fig-monitoring">
   <video
@@ -90,21 +88,22 @@ begin without delay.
   <figcaption>Figure 1: Continuous Sepsis Monitoring</figcaption>
 </figure>
 
-Once sepsis is flagged, the system directs the clinician's attention to a
-list of time-bound steps that keep treatment guideline-compliant. As shown
+Once sepsis is flagged, the system highlights a
+list of time-bound steps for guideline-compliant treatment. As shown
 in [Figure 2](#fig-workflows), the attending clinician is expected to check
 off each item while directing nursing staff to perform the associated
 action. This ensures critical tasks, such as administering high-flow oxygen
 and establishing IV/IO access, are completed on time. Two of these, fluid
 resuscitation and antibiotic administration, are complex and time-critical
-interventions. To handle the complexity, each launches a patient-tailored
+interventions. Each launches a patient-tailored
 sub-workflow when the clinician checks it off.
 
 When starting fluid resuscitation, the system accounts for the risk of
-fluid overload and recommends a guideline-prescribed fluid at a dose
+fluid overload. It then recommends a guideline-prescribed fluid at a dose
 tailored to the patient's weight and condition. Similarly, when starting
-antibiotics, it factors in the patient's history along with hospital- and
-area-specific pathogens, recommending an antibiotic combination that is
+antibiotics, the system factors in the patient's history along with
+hospital- and area-specific pathogens. It then  recommends an
+antibiotic combination that is
 broad enough to cover likely pathogens but no broader than necessary.
 
 <figure id="fig-workflows">
@@ -127,7 +126,7 @@ our system delivers *timely* reminders to support these reassessments. The
 reminders contain relevant patient information, such as vital signs graphs,
 annotated with prior fluid boluses and inotropic doses. This gives the
 clinician a holistic view of the patient's state and treatment progress,
-equipping them to direct care effectively.
+helping them direct care effectively.
 
 Based on the clinician's assessment of patient progress and treatment
 history, the system suggests next steps. This keeps multi-step
