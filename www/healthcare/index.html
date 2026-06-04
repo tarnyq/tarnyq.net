@@ -39,9 +39,9 @@ at the <a href="https://www.sccm.org/survivingsepsiscampaign">Surviving
 Sepsis</a> guideline. Sepsis remains one of the leading causes of
 mortality in ICUs across the world. Sepsis kills in hours, and so a
 timely response can lead to lives saved. Drug dosing and fluid
-resuscitation are complex, particularly in pediatric settings. It is
-age- and weight-sensitive, and mortality climbs sharply with each
-passing hour.</p>
+resuscitation are complex, particularly in pediatric settings and while
+managing septic shock. It is age- and weight-sensitive, and mortality
+climbs sharply with each passing hour.</p>
 <p>Our decision support system interprets these guidelines, taking into
 account a patient’s medical history and condition, and presents
 compliant advice. This enables clinicians to follow the guidelines
@@ -189,6 +189,26 @@ Urbana-Champaign and OSF Children's Hospital of Illinois, Peoria, our
 demonstrably safe system provides comprehensive decision support.
 
 -->
+<h2 id="remaining-challenges">Remaining Challenges</h2>
+<p>Our current tool has limitations we plan to address. These
+include:</p>
+<ol type="1">
+<li><em>Automating manual entry</em>: For our system to find wider
+adoption, it must fit smoothly into existing clinical workflows. Manual
+entry adds to the cognitive workload we aim to reduce. Our current
+system still asks the clinician for information such as pre-existing
+conditions and recent drug history. In many modern emergency departments
+this data already lives in the EHR and can be retrieved directly.
+Integrating with a diverse range of deployed EHRs and patient monitors
+is something we intend to address.</li>
+<li><em>Covering more conditions</em>: We started with sepsis as it is
+one of the pressing problems in ICUs. However, our approach extends to
+other time-critical conditions, such as <a
+href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms">cardiac
+arrest</a> and <a
+href="https://www.ahajournals.org/guidelines/acute-ischemic-stroke">stroke</a>,
+both of which have established management guidelines.</li>
+</ol>
 <h2 id="publications">Related Publications</h2>
 <ul>
 <li><a href="pubs/MediK-FMCAD-23.pdf">MediK: Towards Safe

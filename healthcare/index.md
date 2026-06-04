@@ -16,7 +16,8 @@ the [Surviving Sepsis][surviving-sepsis] guideline.
 Sepsis remains one of the leading causes of mortality in
 ICUs across the world.
 Sepsis kills in hours, and so a timely response can lead to lives saved.
-Drug dosing and fluid resuscitation are complex, particularly in pediatric settings.
+Drug dosing and fluid resuscitation are complex,
+particularly in pediatric settings and while managing septic shock.
 It is age- and weight-sensitive,
 and mortality climbs sharply with each passing hour.
 
@@ -211,6 +212,25 @@ demonstrably safe system provides comprehensive decision support.
 
 -->
 
+Remaining Challenges
+--------------------
+
+Our current tool has limitations we plan to address. These include:
+
+1.  *Automating manual entry*: For our system to find wider adoption, it must
+    fit smoothly into existing clinical workflows. Manual entry adds to
+    the cognitive workload we aim to reduce.
+    Our current system still asks the clinician for information such
+    as pre-existing conditions and recent drug history. In many modern
+    emergency departments this data already lives in the EHR and can be
+    retrieved directly. Integrating with a diverse range of deployed EHRs
+    and patient monitors is something we intend to address.
+2.  *Covering more conditions*: We started with sepsis as it is one of the
+    pressing problems in ICUs. However, our approach extends to other
+    time-critical conditions, such as
+    [cardiac arrest](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms)
+    and [stroke](https://www.ahajournals.org/guidelines/acute-ischemic-stroke),
+    both of which have established management guidelines.
 
 
 Related Publications { #publications }
