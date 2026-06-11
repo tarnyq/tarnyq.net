@@ -12,11 +12,12 @@ unknown zero-day vulnerabilities.
 While these claims should be treated with a degree of skeptisism
 both in terms of cost and capabilities,
 the consensus is that there are no fundamental issues to the approach,
-the functionality will likely be achieved in future iterations.
+this ability will likely be achieved in future iterations.
 
 <!-- references
     Mythos Release
-    Firefox/Mozilla assesment of Mythos
+    https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/
+    https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/
 -->
 
 These capabilites will greatly reduce the costs of breaking into
@@ -43,6 +44,32 @@ For example, you may find out you cannot restore a backup only during a crisis.
 Methodology
 ===========
 
+<aside>
+<figure>
+<figcaption>
+In traditional services, data is stored in plain text on the server,
+and the application acts as a gatekeeper,
+allowing valid requests and denying unauthorized ones.
+However, if an unauthorized agent gains access to the server, they have free reign
+to view and modify the data.
+</figcaption>
+
+![](./traditional.svg){ alt="Traditional Model" .center .inline-svg }
+
+</figure>
+<figure class="row">
+<figcaption style="flex:1;">
+In our model, access-controlled data is encrypted. This means that even if
+someone is able to break into the server there is little they can do with it.
+Authorized users, however, have a key to decrypt the data. This key is kept
+securely on their device, and unlocked using biometrics or a PIN.
+It never leaves the device.
+</figcaption>
+![Our Model](./our-model.svg){ alt="Our Model" height="100%" .inline-svg }
+</aside>
+
+
+
 Through putting together a few tried and tested technologies,
 we can make these services easier to deploy, robust and secure at the same time.
 These technologies take a "secure-by-design" approach---security is achieved
@@ -53,7 +80,7 @@ rather than installing grills on windows.
 At the same time, existing security approaches may be used on top (e.g. operating
 within a VPN) allowing a defense-in-depth approach.
 
-Let us enumerate some of these technologies
+Let us enumerate some of these technologies.
 
 Distributed, tamper-proof ledgers.
 :   This is the technology underlying Blockchains and the Git VCS.
