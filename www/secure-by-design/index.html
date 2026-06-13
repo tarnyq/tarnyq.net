@@ -57,49 +57,82 @@ infrastructure. When they outsource it to an outside firm it is
 difficult to evaluate and access the quality of their setup. For
 example, you may find out you cannot restore a backup only during a
 crisis.</p>
+<p>We’d like to work on a product that employs formal techniques to
+provide secure yet easy to deploy services. Through putting together a
+few tried and tested technologies, we can make robust and secure
+services easier to deploy. These technologies take a “secure-by-design”
+approach—security is achieved not by starting with an insecure design
+and then bolting on top mechanisms to keep out attackers, but rather
+they completely avoid insecurities. E.g. A bank vault is built without
+windows from the start, rather than installing security bars on windows.
+At the same time, existing security approaches may be used on top
+(e.g. operating within a VPN) allowing a defense-in-depth approach.</p>
 <h1 id="methodology">Methodology</h1>
-<aside>
+<div class="row">
+<div style="flex: 3;">
 <figure>
-<figcaption>
-In traditional services, data is stored in plain text on the server, and
-the application acts as a gatekeeper, allowing valid requests and
+<img src="./traditional.svg" alt="The Traditional Model" />
+<figcaption aria-hidden="true">The Traditional Model</figcaption>
+</figure>
+</div>
+<div style="flex: 2;">
+<p>In traditional services, data is stored in plain text on the server,
+and the application acts as a gatekeeper, allowing valid requests and
 denying unauthorized ones. However, if an unauthorized agent gains
-access to the server, they have free reign to view and modify the data.
-</figcaption>
-<img src="./traditional.svg" class="center" alt="Traditional Model" />
-<!-- prevent figure -->
-</figure>
-<figure class="row">
-<figcaption style="flex:1;">
-In our model, access-controlled data is encrypted. This means that even
-if someone is able to break into the server there is little they can do
-with it. Authorized users, however, have a key to decrypt the data. This
-key is kept securely on their device, and unlocked using biometrics or a
-PIN. It never leaves the device.
-</figcaption>
-<img src="./our-model.svg" alt="Our Model" /> <!-- prevent figure -->
-</figure>
+access to the server, they have free reign to view and modify the
+data.</p>
+</div>
+</div>
+<div class="row">
+<div style="flex: 3;">
+<p>In our model, access-controlled data is encrypted. This means that
+even if someone is able to break into the server there is little they
+can do with it. Authorized users, however, have a key to decrypt the
+data. This key is kept securely on their device, and unlocked using
+biometrics or a PIN. It never leaves the device.</p>
+</div>
+<div style="flex: 2;">
 <figure>
-<figcaption style="flex:1;">
-Our model uses a distributed architecture. This has several advantages.
-Each server may keep a complete copy of the data acting as a backup.
-Since backups are architecturally no different from other servers,
-restoring backups is painless. Users may easily make changes offline and
-synchronize with a server or even another user.
-</figcaption>
-<img src="./distributed.svg" class="center" alt="Our Model" />
-<!-- prevent figure -->
+<img src="./our-model.svg" alt="Our model: Private data is encrypted" />
+<figcaption aria-hidden="true">Our model: Private data is
+encrypted</figcaption>
 </figure>
-</aside>
-<p>Through putting together a few tried and tested technologies, we can
-make these services easier to deploy, robust and secure at the same
-time. These technologies take a “secure-by-design” approach—security is
-achieved not by starting with an insecure design and then bolting on top
-mechanisms to keep out attackers, but rather they completely avoid
-insecurities. E.g. A bank vault is built without windows from the start,
-rather than installing grills on windows. At the same time, existing
-security approaches may be used on top (e.g. operating within a VPN)
-allowing a defense-in-depth approach.</p>
+</div>
+</div>
+<div class="row">
+<div style="flex: 2;">
+<figure>
+<img src="./distributed.svg" alt="A Distrubuted Architecture" />
+<figcaption aria-hidden="true">A Distrubuted Architecture</figcaption>
+</figure>
+</div>
+<div style="flex: 3;">
+<p>Our model uses a distributed architecture. This has several
+advantages. For example, each server may keep a complete copy of the
+data, and so act as a backup. Restoring data from backups is no
+different from ordinary node-to-node synchronization, so is much less
+risky than in the traditional model. Multiple “blessed” servers may also
+be used to help in load sharing or to improve geographical locality of
+data. Users may easily make changes offline and later synchronize with a
+server or even another user.</p>
+</div>
+</div>
+<div class="row">
+<div style="flex: 3;">
+<p>We employ a powerful cryptographic structure, called the <em>Merkle
+tree</em>, that ensures the correctness of our data and makes any
+tampering or unauthorized modifications obvious and traceble. This
+structure is the foundation of the Git VCS and blockchain-based
+systems.</p>
+</div>
+<div style="flex: 2;">
+<figure>
+<img src="./merkle.svg" alt="Merkle Tree" />
+<figcaption aria-hidden="true">Merkle Tree</figcaption>
+</figure>
+</div>
+</div>
+<hr />
 <p>Let us enumerate some of these technologies.</p>
 <dl>
 <dt>Distributed, tamper-proof ledgers.</dt>

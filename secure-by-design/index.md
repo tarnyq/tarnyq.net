@@ -40,59 +40,82 @@ When they outsource it to an outside firm it is difficult
 to evaluate and access the quality of their setup.
 For example, you may find out you cannot restore a backup only during a crisis.
 
+We'd like to work on a product that employs formal techniques to provide secure
+yet easy to deploy services.
+Through putting together a few tried and tested technologies,
+we can make robust and secure services easier to deploy.
+These technologies take a "secure-by-design" approach---security is achieved
+not by starting with an insecure design and then bolting on top mechanisms
+to keep out attackers, but rather they completely avoid insecurities.
+E.g. A bank vault is built without windows from the start,
+rather than installing security bars on windows.
+At the same time, existing security approaches may be used on top (e.g. operating
+within a VPN) allowing a defense-in-depth approach.
+
 
 Methodology
 ===========
 
-<aside>
-<figure>
-<figcaption>
+<div class="row">
+<div style="flex: 3;" >
+![The Traditional Model](./traditional.svg)
+</div>
+<div style="flex: 2;" >
 In traditional services, data is stored in plain text on the server,
 and the application acts as a gatekeeper,
 allowing valid requests and denying unauthorized ones.
 However, if an unauthorized agent gains access to the server, they have free reign
 to view and modify the data.
-</figcaption>
-![Traditional Model](./traditional.svg){ .center } <!-- prevent figure -->
-</figure>
+</div>
+</div>
 
-<figure class="row">
-<figcaption style="flex:1;">
+
+<div class="row">
+<div style="flex: 3;" >
 In our model, access-controlled data is encrypted. This means that even if
 someone is able to break into the server there is little they can do with it.
 Authorized users, however, have a key to decrypt the data. This key is kept
 securely on their device, and unlocked using biometrics or a PIN.
 It never leaves the device.
-</figcaption>
-![Our Model](./our-model.svg) <!-- prevent figure -->
-</figure>
+</div>
+<div style="flex: 2;" >
+![Our model: Private data is encrypted](./our-model.svg)
+</div>
+</div>
 
-<figure>
-<figcaption style="flex:1;">
+
+<div class="row">
+<div style="flex: 2;" >
+![A Distrubuted Architecture](./distributed.svg)
+</div>
+<div style="flex: 3;" >
 Our model uses a distributed architecture.
 This has several advantages.
-Each server may keep a complete copy of the data acting as a backup.
-Since backups are architecturally no different from other servers,
-restoring backups is painless.
-Users may easily make changes offline and synchronize with a server
+For example, each server may keep a complete copy of the data, and so act as a backup.
+Restoring data from backups is no different from ordinary node-to-node synchronization,
+so is much less risky than in the traditional model.
+Multiple "blessed" servers may also be used to help in load sharing or
+to improve geographical locality of data.
+Users may easily make changes offline and later synchronize with a server
 or even another user.
-</figcaption>
-![Our Model](./distributed.svg){ .center } <!-- prevent figure -->
-</figure>
+</div>
+</div>
 
-</aside>
+<div class="row">
+<div style="flex: 3;" >
+We employ a powerful cryptographic structure, called the *Merkle tree*,
+that ensures the correctness of our data and makes any tampering or
+unauthorized modifications obvious and traceble.
+This structure is the foundation of the Git VCS and blockchain-based systems.
+</div>
+<div style="flex: 2;" >
+![Merkle Tree](./merkle.svg)
+</div>
+</div>
 
 
 
-Through putting together a few tried and tested technologies,
-we can make these services easier to deploy, robust and secure at the same time.
-These technologies take a "secure-by-design" approach---security is achieved
-not by starting with an insecure design and then bolting on top mechanisms
-to keep out attackers, but rather they completely avoid insecurities.
-E.g. A bank vault is built without windows from the start,
-rather than installing grills on windows.
-At the same time, existing security approaches may be used on top (e.g. operating
-within a VPN) allowing a defense-in-depth approach.
+---
 
 Let us enumerate some of these technologies.
 

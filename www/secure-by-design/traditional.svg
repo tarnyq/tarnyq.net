@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="119.54023mm"
-   height="71.790802mm"
-   viewBox="0 0 119.54024 71.790803"
+   width="110.24673mm"
+   height="60.230606mm"
+   viewBox="0 0 110.24673 60.230607"
    version="1.1"
    id="svg1"
    sodipodi:docname="traditional.svg"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showguides="false"
      inkscape:zoom="1.1672593"
-     inkscape:cx="217.1754"
-     inkscape:cy="236.02297"
+     inkscape:cx="201.75466"
+     inkscape:cy="209.46503"
      inkscape:window-width="1896"
      inkscape:window-height="1034"
      inkscape:window-x="0"
@@ -36,8 +36,8 @@
     <inkscape:page
        x="0"
        y="0"
-       width="119.54024"
-       height="71.790802"
+       width="110.24673"
+       height="60.230606"
        id="page21"
        margin="0"
        bleed="0" />
@@ -125,7 +125,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-74.879127,-0.29871647)">
+     transform="translate(-78.959197,-7.3255042)">
     <rect
        style="fill:#f4e3d7;stroke:none;stroke-width:0.61;stroke-miterlimit:2.61313;stroke-dasharray:none"
        id="rect1-19-5-3"
@@ -136,7 +136,7 @@
        ry="0" />
     <path
        id="rect1-19-5"
-       style="fill:#f4e3d7;stroke:#000000;stroke-width:0.61;stroke-miterlimit:2.61313"
+       style="fill:#f4e3d7;stroke:#000000;stroke-width:0.21;stroke-miterlimit:2.61313;stroke-dasharray:none"
        d="M 162.36503,60.729083 H 109.10835 V 12.891772 h 78.54573 v 47.837311 h -6.55707"
        sodipodi:nodetypes="cccccc" />
     <rect
@@ -177,7 +177,7 @@
          y="0"><tspan
            x="160.00669"
            y="230.07825"
-           id="tspan1">User</tspan></text>
+           id="tspan4">User</tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,19.734586,0.18657702)"
@@ -187,9 +187,9 @@
          y="0"><tspan
            x="147.46556"
            y="230.07825"
-           id="tspan3"><tspan
+           id="tspan8"><tspan
              style="font-family:serif;-inkscape-font-specification:serif"
-             id="tspan2">Secret</tspan></tspan></text>
+             id="tspan6">Secret</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:3.52777px;line-height:2;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0.264583px;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:18.282;display:inline;fill:#000000;stroke:none;stroke-width:0.237067;stroke-miterlimit:2.61313"
@@ -199,22 +199,22 @@
          transform="translate(2.2459813,13.176424)"><tspan
            x="36.983826"
            y="56.748455"
-           id="tspan7"><tspan
+           id="tspan14"><tspan
              style="font-family:serif;-inkscape-font-specification:serif"
-             id="tspan5">Maria
+             id="tspan11">Maria
 </tspan></tspan><tspan
            x="36.983826"
            y="63.803992"
-           id="tspan10"><tspan
+           id="tspan16"><tspan
              style="font-family:serif;-inkscape-font-specification:serif"
-             id="tspan9">Aisha
+             id="tspan15">Aisha
 </tspan></tspan><tspan
            x="36.983826"
            y="70.859534"
-           id="tspan13"><tspan
+           id="tspan27"><tspan
              dx="0 0 0 -0.26458299"
              style="font-family:serif;-inkscape-font-specification:serif"
-             id="tspan12">Kofi</tspan></tspan></text>
+             id="tspan26">Kofi</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-size:3.52777px;line-height:2;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0.264583px;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:27.6518;display:inline;fill:#000000;stroke:none;stroke-width:0.237067;stroke-miterlimit:2.61313"
@@ -224,21 +224,21 @@
          transform="translate(18.466077,13.176424)"><tspan
            x="36.983826"
            y="56.748455"
-           id="tspan18"><tspan
+           id="tspan29"><tspan
              style="font-family:serif;-inkscape-font-specification:serif"
-             id="tspan17">483-22-91
+             id="tspan28">483-22-91
 </tspan></tspan><tspan
            x="36.983826"
            y="63.803992"
-           id="tspan20"><tspan
+           id="tspan31"><tspan
              style="font-family:serif;-inkscape-font-specification:serif"
-             id="tspan19">544-41-06
+             id="tspan30">544-41-06
 </tspan></tspan><tspan
            x="36.983826"
            y="70.859534"
-           id="tspan22"><tspan
+           id="tspan33"><tspan
              style="font-family:serif;-inkscape-font-specification:serif"
-             id="tspan21">314-97-15
+             id="tspan32">314-97-15
 </tspan></tspan></text>
       <text
          xml:space="preserve"
@@ -253,7 +253,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:2;font-family:serif;-inkscape-font-specification:serif;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect16);display:inline;fill:#000000;stroke:none;stroke-width:0.896;stroke-miterlimit:2.61313"><tspan
          x="479.74609"
          y="38.977329"
-         id="tspan23">Server</tspan></text>
+         id="tspan34">Server</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,78.780252,-12.540939)"
@@ -263,7 +263,7 @@
        y="0"><tspan
          x="118.1514"
          y="128.87577"
-         id="tspan24">Application</tspan></text>
+         id="tspan35">Application</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,130.18951,-12.37527)"
@@ -273,7 +273,7 @@
        y="0"><tspan
          x="136.4047"
          y="128.87577"
-         id="tspan25">Database</tspan></text>
+         id="tspan36">Database</tspan></text>
     <g
        fill="currentColor"
        fill-rule="evenodd"

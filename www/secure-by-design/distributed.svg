@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="110.31282mm"
-   height="62.484314mm"
-   viewBox="0 0 110.31282 62.484313"
+   width="94.138138mm"
+   height="55.445232mm"
+   viewBox="0 0 94.13814 55.445231"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showguides="true"
-     inkscape:zoom="5.353493"
-     inkscape:cx="252.17181"
-     inkscape:cy="159.42862"
+     inkscape:zoom="1.7309474"
+     inkscape:cx="191.80247"
+     inkscape:cy="234.84249"
      inkscape:window-width="1896"
      inkscape:window-height="1034"
      inkscape:window-x="0"
@@ -37,10 +37,10 @@
   <defs
      id="defs1">
     <rect
-       x="-184.30352"
-       y="-47.819292"
-       width="39.84941"
-       height="84.679996"
+       x="-184.30351"
+       y="-47.81929"
+       width="39.849411"
+       height="84.679993"
        id="rect22" />
     <marker
        style="overflow:visible"
@@ -197,7 +197,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-21.646594,-3.4266341)">
+     transform="translate(-29.08216,-7.0765291)">
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:0.21;stroke-miterlimit:2.61313"
        id="rect6-9"
@@ -208,12 +208,12 @@
        ry="1.9226753" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,24.623151,2.235077)"
+       transform="matrix(0.26458333,0,0,0.26458333,25.772376,2.235077)"
        id="text2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:2;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000;stroke:none;stroke-width:0.793701;stroke-miterlimit:2.61313"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:2;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000;stroke:none;stroke-width:0.793701;stroke-miterlimit:2.61313"
        x="95.509888"
        y="0"><tspan
-         x="175.47481"
+         x="171.51527"
          y="44.597065"
          id="tspan1">Site C
 </tspan></text>
@@ -227,12 +227,12 @@
        ry="1.9226753" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,2.4606192,16.846964)"
+       transform="matrix(0.26458333,0,0,0.26458333,2.4817835,16.846964)"
        id="text3"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:2;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;stroke:none;stroke-width:0.793701;stroke-miterlimit:2.61313"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:2;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;stroke:none;stroke-width:0.793701;stroke-miterlimit:2.61313"
        x="67.896484"
        y="0"><tspan
-         x="369.77417"
+         x="369.59016"
          y="51.095112"
          id="tspan2">Site B</tspan></text>
     <rect
@@ -245,12 +245,12 @@
        ry="1.9226753" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-13.833939,3.6100459)"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.829709,3.6100459)"
        id="text5"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:2;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect5);display:inline;fill:#000000;stroke:none;stroke-width:0.793701;stroke-miterlimit:2.61313"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:2;font-family:serif;-inkscape-font-specification:serif;text-align:center;letter-spacing:1px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect5);display:inline;fill:#000000;stroke:none;stroke-width:0.793701;stroke-miterlimit:2.61313"
        x="62.048939"
        y="0"><tspan
-         x="211.32896"
+         x="210.64896"
          y="101.12441"
          id="tspan3">Site A</tspan></text>
     <g
@@ -260,7 +260,7 @@
        stroke-linejoin="round"
        stroke-width="3"
        id="g2-5"
-       transform="matrix(0.25596616,0,0,0.25596616,116.03272,41.949383)"
+       transform="matrix(0.25596616,0,0,0.25596616,110.74105,44.595218)"
        inkscape:transform-center-x="-0.03888489"
        inkscape:transform-center-y="-0.15264369">
       <path
@@ -272,7 +272,7 @@
     </g>
     <path
        style="fill:none;stroke:#999999;stroke-width:0.61;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:2.61313;stroke-dasharray:none;marker-start:url(#marker21);marker-end:url(#marker22)"
-       d="m 36.959997,41.773392 c 5.423339,0.549176 7.639023,-1.361543 8.082499,-6.736373"
+       d="m 36.195724,44.219066 c 2.213392,-7.24641 8.403296,-1.820107 8.846772,-9.182047"
        id="path8"
        sodipodi:nodetypes="cc" />
     <path
@@ -297,7 +297,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#999999;stroke-width:0.61;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:2.61313;stroke-dasharray:none;marker-start:url(#marker21);marker-end:url(#marker22)"
-       d="m 117.24629,42.426147 c -3.16694,-0.968923 -6.21192,-2.273233 -7.88146,-7.359997"
+       d="m 116.17631,44.566112 c 0.19586,-4.637435 -3.30768,-6.553163 -6.81148,-9.499962"
        id="path13"
        sodipodi:nodetypes="cc" />
     <path
@@ -322,7 +322,7 @@
        stroke-linejoin="round"
        stroke-width="3"
        id="g2"
-       transform="matrix(0.25596616,0,0,0.25596616,24.287633,40.922273)"
+       transform="matrix(0.25596616,0,0,0.25596616,29.5793,45.684776)"
        inkscape:transform-center-x="-0.03888489"
        inkscape:transform-center-y="-0.15264369">
       <path
