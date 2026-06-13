@@ -20,7 +20,11 @@ build_webpages() {
     for markdown in "${markdowns[@]}"; do
         html="www/${markdown%.md}.html"
         mkdir -p "$(dirname "$html")"
-        pandoc -t html5 --css=/style.css --standalone "$markdown" -o "$html"
+        pandoc -f markdown \
+               -t html5 \
+               --css=/style.css \
+               --standalone "$markdown" \
+               -o "$html"
     done
 }
 
