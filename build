@@ -30,5 +30,5 @@ build_webpages() {
 
 clean
 mkdir -p www/healthcare
-copy_assets
 build_webpages
+copy_assets
