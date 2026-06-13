@@ -34,11 +34,12 @@ automate vulnerability scanning of internet-based services including
 finding previously unknown zero-day vulnerabilities. While these claims
 should be treated with a degree of skeptisism both in terms of cost and
 capabilities, the consensus is that there are no fundamental issues to
-the approach, the functionality will likely be achieved in future
+the approach, this ability will likely be achieved in future
 iterations.</p>
 <!-- references
     Mythos Release
-    Firefox/Mozilla assesment of Mythos
+    https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/
+    https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/
 -->
 <p>These capabilites will greatly reduce the costs of breaking into and
 hacking computer systems. Attacks that occur every now and again will
@@ -57,6 +58,39 @@ difficult to evaluate and access the quality of their setup. For
 example, you may find out you cannot restore a backup only during a
 crisis.</p>
 <h1 id="methodology">Methodology</h1>
+<aside>
+<figure>
+<figcaption>
+In traditional services, data is stored in plain text on the server, and
+the application acts as a gatekeeper, allowing valid requests and
+denying unauthorized ones. However, if an unauthorized agent gains
+access to the server, they have free reign to view and modify the data.
+</figcaption>
+<img src="./traditional.svg" class="center" alt="Traditional Model" />
+<!-- prevent figure -->
+</figure>
+<figure class="row">
+<figcaption style="flex:1;">
+In our model, access-controlled data is encrypted. This means that even
+if someone is able to break into the server there is little they can do
+with it. Authorized users, however, have a key to decrypt the data. This
+key is kept securely on their device, and unlocked using biometrics or a
+PIN. It never leaves the device.
+</figcaption>
+<img src="./our-model.svg" alt="Our Model" /> <!-- prevent figure -->
+</figure>
+<figure>
+<figcaption style="flex:1;">
+Our model uses a distributed architecture. This has several advantages.
+Each server may keep a complete copy of the data acting as a backup.
+Since backups are architecturally no different from other servers,
+restoring backups is painless. Users may easily make changes offline and
+synchronize with a server or even another user.
+</figcaption>
+<img src="./distributed.svg" class="center" alt="Our Model" />
+<!-- prevent figure -->
+</figure>
+</aside>
 <p>Through putting together a few tried and tested technologies, we can
 make these services easier to deploy, robust and secure at the same
 time. These technologies take a “secure-by-design” approach—security is
@@ -66,7 +100,7 @@ insecurities. E.g. A bank vault is built without windows from the start,
 rather than installing grills on windows. At the same time, existing
 security approaches may be used on top (e.g. operating within a VPN)
 allowing a defense-in-depth approach.</p>
-<p>Let us enumerate some of these technologies</p>
+<p>Let us enumerate some of these technologies.</p>
 <dl>
 <dt>Distributed, tamper-proof ledgers.</dt>
 <dd>
