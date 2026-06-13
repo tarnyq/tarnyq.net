@@ -3,7 +3,7 @@ title: Tarnyq
 ---
 
 About us
---------
+========
 
 We build high assurance software using [*formal method techniques*][fm].
 These provide guarantees of correctness that are more urgent than ever,
@@ -27,7 +27,7 @@ auditing and development of fintech software and protocols.
 
 
 Contact
--------
+=======
 
 Reach out to us by email at:
 

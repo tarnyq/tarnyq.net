@@ -28,7 +28,7 @@ with a reduced cognitive load.
 
 
 Our Approach
-------------
+============
 
 Current sepsis support systems are either rigid EHR rule alerts,
 or ML/AI-based statistical analyzers for warning of sepsis onset.
@@ -54,7 +54,7 @@ You may read more about our system and methodology
 in the [linked publications](#publications).
 
 Current Progress
-----------------
+================
 
 Our current system, built in collaboration with OSF Children's Hospital in
 Peoria, Illinois, provides guidance through a tablet at the patient's
@@ -203,7 +203,7 @@ https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms
 
 
 Our System In Action
---------------------
+====================
 
 Built as part of a research collaboration between University of Illinois
 Urbana-Champaign and OSF Children's Hospital of Illinois, Peoria, our
@@ -214,7 +214,7 @@ demonstrably safe system provides comprehensive decision support.
 
 
 Related Publications { #publications }
---------------------
+====================
 
 *   [MediK: Towards Safe Guideline-based Clinical Decision Support](pubs/MediK-FMCAD-23.pdf)  
     Published in [FMCAD 2023](https://ieeexplore.ieee.org/abstract/document/10329373)

@@ -22,6 +22,7 @@ build_webpages() {
         mkdir -p "$(dirname "$html")"
         pandoc -f markdown \
                -t html5 \
+               --shift-heading-level-by=1 \
                --css=/style.css \
                --standalone "$markdown" \
                -o "$html"

@@ -2,10 +2,6 @@
 title: Secure by Design Software & Services
 ---
 
-
-Motivation
-==========
-
 Anthropic claims that their Mythos model will greatly simplify and automate
 vulnerability scanning of internet-based services including finding previously
 unknown zero-day vulnerabilities.
