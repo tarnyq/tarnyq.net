@@ -67,6 +67,19 @@ It never leaves the device.
 ![Our Model](./our-model.svg) <!-- prevent figure -->
 </figure>
 
+<figure>
+<figcaption style="flex:1;">
+Our model uses a distributed architecture.
+This has several advantages.
+Each server may keep a complete copy of the data acting as a backup.
+Since backups are architecturally no different from other servers,
+restoring backups is painless.
+Users may easily make changes offline and synchronize with a server
+or even another user.
+</figcaption>
+![Our Model](./distributed.svg){ .center } <!-- prevent figure -->
+</figure>
+
 </aside>
 
 
