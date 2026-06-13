@@ -53,10 +53,9 @@ allowing valid requests and denying unauthorized ones.
 However, if an unauthorized agent gains access to the server, they have free reign
 to view and modify the data.
 </figcaption>
-
-![](./traditional.svg){ alt="Traditional Model" .center .inline-svg }
-
+![Traditional Model](./traditional.svg){ .center } <!-- prevent figure -->
 </figure>
+
 <figure class="row">
 <figcaption style="flex:1;">
 In our model, access-controlled data is encrypted. This means that even if
@@ -65,7 +64,9 @@ Authorized users, however, have a key to decrypt the data. This key is kept
 securely on their device, and unlocked using biometrics or a PIN.
 It never leaves the device.
 </figcaption>
-![Our Model](./our-model.svg){ alt="Our Model" height="100%" .inline-svg }
+![Our Model](./our-model.svg) <!-- prevent figure -->
+</figure>
+
 </aside>
 
 
